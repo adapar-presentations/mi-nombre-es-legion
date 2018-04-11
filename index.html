@@ -24,8 +24,156 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section class="slide-1">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-2">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-3">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-4">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-5">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-6">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-7">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-8">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-9">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-10">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-11">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-12">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-13">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-14">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-15">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-16">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-17">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-18">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-19">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-20">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-21">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-22">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-23">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-24">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-25">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-26">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-27">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-28">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-29">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section class="slide-30">
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
 			</div>
 		</div>
 
@@ -37,10 +185,17 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				controls: false,
+				controlsTutorial: false,
+				defaultTiming: 30,
+				progress: false,
+
 				dependencies: [
+					{ src: 'socket.io/socket.io.js', async: true },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/notes-server/client.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
