@@ -607,6 +607,10 @@
 					_resetTimer();
 					return false;
 				} );
+				Reveal.addEventListener( 'slidechanged', function( event ) {
+					_resetTimer();
+					return false;
+				} );
 			}
 
 			/**
