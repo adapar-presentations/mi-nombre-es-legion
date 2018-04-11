@@ -8,7 +8,10 @@
 
 	console.log( 'View slide notes at ' + window.location.origin + '/notes/' + socketId );
 
-	window.open( window.location.origin + '/notes/' + socketId, 'notes-' + socketId );
+	var notesPopup = window.open( window.location.origin + '/notes/' + socketId, 'notes-' + socketId );
+
+	// Allow popup window access to Reveal API
+	notesPopup.Reveal = this.Reveal;
 
 	/**
 	 * Posts the current slide data to the notes window
